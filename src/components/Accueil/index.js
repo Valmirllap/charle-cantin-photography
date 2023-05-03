@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import "./Accueil.css";
 
 export default function Accueil (){
   return(
-    <Wrapper>
-      
+    <Wrapper className="picture-bg">
+     <h1 className="title">Charle Cantin - Photographe</h1>
     </Wrapper>
   )
 };
@@ -11,4 +12,8 @@ export default function Accueil (){
 const Wrapper = styled.div`
 
 `;
+
+
+
+
 
