@@ -3,7 +3,7 @@ import "./Accueil.css";
 
 export default function Accueil (){
   return(
-    <Wrapper className="picture-bg">
+    <Wrapper className="accueil-bg">
      <h1 className="title">Charle Cantin - Photographe</h1>
     </Wrapper>
   )

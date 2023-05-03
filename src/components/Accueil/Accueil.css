@@ -1,25 +1,6 @@
-div.picture-bg{
-  height: 150vh;
-  width: 100%;
+div.accueil-bg{
   background-image: url(../../Images/CharlePicture.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 100px;
-  color: #F1F6F9;
-  background-color: rgba(0, 0, 0);
-  
-}
-@media screen and (max-width: 1246px) {
-  div.picture-bg{
-    font-size: 80px;
-    }
-  }
-@media screen and (max-width: 998px) {
-  div.picture-bg{
-    font-size: 40px;
-  }
-}
+} 
