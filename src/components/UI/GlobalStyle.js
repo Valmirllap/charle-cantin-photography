@@ -18,12 +18,12 @@ div.accueil-bg{
   color: #F1F6F9;
 }
 @media screen and (max-width: 1246px) {
-  div.picture-bg{
+  & div.accueil-bg{
     font-size: 80px;
     }
   }
 @media screen and (max-width: 998px) {
-  div.picture-bg{
+  & div.accueil-bg{
     font-size: 40px;
   }
 }
