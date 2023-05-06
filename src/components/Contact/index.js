@@ -15,30 +15,30 @@ export default function Contact (){
           <Info>Tel.: +33123456789</Info>
           <Info>charlecantinphotographe@gmail.com</Info>
         </Information>
-        <LabelInput for="lastname">Nom de famille</LabelInput>
+        <LabelInput htmlFor="lastname">Nom de famille</LabelInput>
         <Input type="text" name="lastname" id="lastname"/>
 
-        <LabelInput for="firstname">Prénom</LabelInput>
+        <LabelInput htmlFor="firstname">Prénom</LabelInput>
         <Input type="text" name="firstname" id="firstname"/>
 
-        <LabelInput for="email">E-mail</LabelInput>
+        <LabelInput htmlFor="email">E-mail</LabelInput>
         <Input type="email" name="email" id="email"/>
 
-        <LabelInput for="phone">Téléphone</LabelInput>
+        <LabelInput htmlFor="phone">Téléphone</LabelInput>
         <Input type="tel" name="phone" id="phone"/>
 
-        <LabelInput for="seance">Type de séance</LabelInput>
+        <LabelInput htmlFor="seance">Type de séance</LabelInput>
         <Select name="seance" id="seance">
           <option value=""></option>
         </Select>
 
-        <LabelInput for="date">Sélectionnez une date</LabelInput>
+        <LabelInput htmlFor="date">Sélectionnez une date</LabelInput>
         <Input type="date" name="date" id="date"/>
 
-        <LabelInput for="location">Lieu du shooting</LabelInput>
+        <LabelInput htmlFor="location">Lieu du shooting</LabelInput>
         <Input type="text" name="location" id="location"/>
 
-        <LabelInput for="message">Rédiger votre message ici ...</LabelInput>
+        <LabelInput htmlFor="message">Rédiger votre message ici ...</LabelInput>
         <TextArea type="text" name="message" id="message"/>
 
        <Link to="/"><ButtonSend>Envoyer</ButtonSend></Link> 

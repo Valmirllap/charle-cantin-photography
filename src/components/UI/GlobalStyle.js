@@ -29,6 +29,11 @@ div.accueil-bg{
 }
 select {
   background-color: ${(props) => props.theme.neutral};
+  display: block;
+  padding: 5px;
+  margin-top: 15px;
+  width: 20%;
+  font-size: 18px;
 }
 
 `;
