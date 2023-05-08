@@ -1,10 +1,10 @@
 # How clone the repository charle-cantin-photography
-// $ git clone git@github.com:Valmirllap/charle-cantin-photography.git
-> Cloning into `Name of the folder` ...
-> remote: Counting objects: X, done.
-> remote: Compressing objects: 100% (X/X), done.
-> remove: Total X (delta 1), reused X (delta 1)
-> Unpacking objects: 100% (X/X), done.
+// $ git clone git@github.com:Valmirllap/charle-cantin-photography.git \
+// Cloning into `Name of the folder` ... \
+// remote: Counting objects: X, done. \
+// remote: Compressing objects: 100% (X/X), done.\
+// remove: Total X (delta 1), reused X (delta 1)\
+// Unpacking objects: 100% (X/X), done.\
 
 # After cloning how to run the app in local
 ## Available Scripts
@@ -46,4 +46,5 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 # How to run the app Online
 Follow this steps to run the app online:
-> Click here [Online-App](name of the website)
+> Click here [Online-App](https://charles-cantin-photography-vl.netlify.app)\
+> or you can copy this link https://charles-cantin-photography-vl.netlify.app
