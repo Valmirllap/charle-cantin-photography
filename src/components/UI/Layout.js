@@ -37,8 +37,4 @@ const Main = styled.div`
   border: solid 1px;
   margin: auto;
   display: flex;
-
-  @media (max-width: 576px) {
-    display: block;
-  }
   `;

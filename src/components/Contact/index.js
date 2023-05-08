@@ -1,14 +1,31 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-
+import React from "react";
+import { useForm, ValidationError } from '@formspree/react'
 
 export default function Contact (){
+
+  const [state, handleSubmit] = useForm("xnqywrqb");
+  if(state.succeeded) {
+    return <ValdiationForm className="validation">
+            <TextValidationForm>Merci de nous avoir contacté!</TextValidationForm>
+          </ValdiationForm>
+  }
+
+  const options = [
+    {value: "mariage", label: "Marriage"},
+    {value: "pregnancy", label: "Grossesse"},
+    {value: "baby", label: "Bébé"},
+    {value: "family", label: "Famille"},
+    {value: "baptism", label: "Baptême"},
+    {value: "couple", label: "Couple"},
+    {value: "portrait", label: "Portrait"},
+  ]
   return(
     <Wrapper>
        <ContainerTitle>
         <Title>Contact</Title>
       </ContainerTitle>
-      <ContainerForm>
+      <ContainerForm onSubmit={handleSubmit}>
         <Information>
           <TitleInfo>Charle Cantin - Photographe</TitleInfo>
           <Info>75000 Paris / France</Info>
@@ -17,35 +34,68 @@ export default function Contact (){
         </Information>
         <LabelInput htmlFor="lastname">Nom de famille</LabelInput>
         <Input type="text" name="lastname" id="lastname"/>
+        <ValidationError prefix="Lastname" field="email" errors={state.errors}/>
 
         <LabelInput htmlFor="firstname">Prénom</LabelInput>
         <Input type="text" name="firstname" id="firstname"/>
+        <ValidationError prefix="Firstname" field="firstname" errors={state.errors}/>
 
         <LabelInput htmlFor="email">E-mail</LabelInput>
         <Input type="email" name="email" id="email"/>
+        <ValidationError prefix="Email" field="email" errors={state.errors}/>
 
         <LabelInput htmlFor="phone">Téléphone</LabelInput>
         <Input type="tel" name="phone" id="phone"/>
+        <ValidationError prefix="Phone" field="phone" errors={state.errors}/>
 
         <LabelInput htmlFor="seance">Type de séance</LabelInput>
         <Select name="seance" id="seance">
           <option value=""></option>
+          {options.map((option) => {
+            return (
+                <option key={option.value} id={option.value}>{option.label}</option>
+            )
+          })}
+          <ValidationError prefix="Seance" field="seance" errors={state.errors}/>
         </Select>
 
         <LabelInput htmlFor="date">Sélectionnez une date</LabelInput>
         <Input type="date" name="date" id="date"/>
+        <ValidationError prefix="Date" field="date" errors={state.errors}/>
 
         <LabelInput htmlFor="location">Lieu du shooting</LabelInput>
         <Input type="text" name="location" id="location"/>
+        <ValidationError prefix="Location" field="location" errors={state.errors}/>
 
         <LabelInput htmlFor="message">Rédiger votre message ici ...</LabelInput>
-        <TextArea type="text" name="message" id="message"/>
+        <TextArea name="message" id="message"/>
+        <ValidationError prefix="Message" field="message" errors={state.errors}/>
 
-       <Link to="/"><ButtonSend>Envoyer</ButtonSend></Link> 
+        <ButtonSend type="submit" disabled={state.submitting}>Envoyer</ButtonSend>
       </ContainerForm>
     </Wrapper>
   )
 };
+
+const ValdiationForm = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  @media (max-width: 576px){
+    align-items: center;
+    justify-content: center;
+  }
+  
+`;
+const TextValidationForm = styled.p`
+  font-size: 24px;
+  font-weight: 500;
+  color: #212A3E;
+  background-color: lightgreen;
+  padding: 40px;
+  box-shadow: 5px 8px 10px 4px;
+`;
 
 const Wrapper = styled.div`
 overflow-x: hidden;
@@ -66,7 +116,7 @@ const Title = styled.h1`
   color: #F1F6F9;
 `;
 
-const ContainerForm = styled.div`
+const ContainerForm = styled.form`
   display: flex;
   flex-direction: column;
   margin: 30px 20px;
@@ -150,4 +200,7 @@ const ButtonSend = styled.button`
     color: ${(props) => props.theme.mainColor};
     background-color: ${(props) => props.theme.backgroundColor};
   }
+  @media screen and (max-width: 768px) {
+    width: 250px;
+   }
 `;

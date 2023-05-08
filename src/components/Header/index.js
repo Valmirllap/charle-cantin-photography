@@ -20,19 +20,19 @@ const hideNavBar = () => {
   const location = useLocation();
   return (
     <Wrapper>
-      <Image src={Charle}/>
+      <Link to="/"><Image src={Charle}/></Link>
       <nav ref={navRef}>
-        <Link  to="/">
-          <MenuEl onClick={hideNavBar} isCurrentPage={location.pathname === "/"}>Accueil</MenuEl>
+        <Link className="link" onClick={hideNavBar} to="/">
+          <MenuEl isCurrentPage={location.pathname === "/"}>Accueil</MenuEl>
         </Link>
-        <Link  to="/galerie">
-          <MenuEl onClick={hideNavBar} isCurrentPage={location.pathname === "/galerie"}>Galerie</MenuEl>
+        <Link className="link" onClick={hideNavBar} to="/galerie">
+          <MenuEl isCurrentPage={location.pathname === "/galerie"}>Galerie</MenuEl>
         </Link>
-        <Link  to="/tarifs">
-          <MenuEl onClick={hideNavBar} isCurrentPage={location.pathname === "/tarifs"}>Tarifs</MenuEl>
+        <Link className="link" onClick={hideNavBar} to="/tarifs">
+          <MenuEl isCurrentPage={location.pathname === "/tarifs"}>Tarifs</MenuEl>
         </Link>
-        <Link  to="/contact">
-          <MenuEl onClick={hideNavBar} isCurrentPage={location.pathname === "/contact"}>Contact</MenuEl>
+        <Link className="link" onClick={hideNavBar}  to="/contact">
+          <MenuEl isCurrentPage={location.pathname === "/contact"}>Contact</MenuEl>
         </Link>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}><CloseIcon/></button>
       </nav>
@@ -64,6 +64,11 @@ background-color: #47555E;
   display: none;
 }
 
+& nav {
+ display: flex;
+ flex-direction: row;
+}
+
 @media (max-width: 768px) {
   & .nav-btn {
     display: flex;
@@ -86,19 +91,19 @@ background-color: #47555E;
     transform: none;
   }
 
-& nav .nav-close-btn{
+  & nav .nav-close-btn{
   position: absolute;
   top: 2rem;
   right: 2rem;
+  }
 }
-
-}
-
-
 `;
 
-const MenuEl = styled.a`
+
+
+const MenuEl = styled.p`
   font-size: 18px;
+  margin-right: 20px;
   padding-bottom: 2px;
   border-bottom: solid 2px ${props => props.isCurrentPage ? "" : "transparent"};
   &:hover{

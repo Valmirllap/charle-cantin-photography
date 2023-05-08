@@ -1,7 +1,12 @@
-# Getting Started with Create React App
+# How clone the repository charle-cantin-photography
+// $ git clone git@github.com:Valmirllap/charle-cantin-photography.git
+> Cloning into `Name of the folder` ...
+> remote: Counting objects: X, done.
+> remote: Compressing objects: 100% (X/X), done.
+> remove: Total X (delta 1), reused X (delta 1)
+> Unpacking objects: 100% (X/X), done.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+# After cloning how to run the app in local
 ## Available Scripts
 
 In the project directory, you can run:
@@ -39,32 +44,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# How to run the app Online
+Follow this steps to run the app online:
+> Click here [Online-App](name of the website)

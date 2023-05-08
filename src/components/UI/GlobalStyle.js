@@ -27,13 +27,20 @@ div.accueil-bg{
     font-size: 40px;
   }
 }
+
+@media screen and (max-width: 576px){
+  & div.validation{
+    display: flex;
+  }
+}
+
 select {
   background-color: ${(props) => props.theme.neutral};
   display: block;
   padding: 5px;
   margin-top: 15px;
-  width: 20%;
-  font-size: 18px;
+  width: 250px;
+  font-size: 16px;
 }
 
 `;
