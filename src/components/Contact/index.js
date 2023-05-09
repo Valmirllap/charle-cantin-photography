@@ -130,7 +130,7 @@ const Information = styled.div`
   width: 40%;
   background-color: ${(props) => props.theme.form};
   @media screen and (max-width: 768px) {
-    width: 60%;
+    width: 80%;
    }
 `;
 const TitleInfo = styled.h1`
@@ -157,7 +157,7 @@ const Input = styled.input`
   color: ${(props) => props.theme.mainColor};
   background-color: ${(props) => props.theme.form};
   @media screen and (max-width: 768px) {
-    width: 60%;
+    width: 70%;
    }
 `;
 
@@ -169,7 +169,7 @@ const Select = styled.select`
   color: ${(props) => props.theme.mainColor};
   background-color: ${(props) => props.theme.form};
   @media screen and (max-width: 768px) {
-    width: 62%;
+    width: 74%;
    }
 `;
 
@@ -182,7 +182,7 @@ height: 100px;
 color: ${(props) => props.theme.mainColor};
 background-color: ${(props) => props.theme.form};
 @media screen and (max-width: 768px) {
-  width: 60%;
+  width: 70%;
  }
 `;
 

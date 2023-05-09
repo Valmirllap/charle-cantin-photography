@@ -43,6 +43,10 @@ const ContainerTarif = styled.div`
   @media screen and (max-width: 768px) {
     width: 50%;
   }
+  @media screen and (max-width: 576px) {
+    width: 80%;
+  }
+
 `;
 
 const Tarif = styled.h2`
